@@ -1,25 +1,29 @@
-# Description
+## Description
 
 This repository is a clone of [cotag/ts-md5](https://github.com/cotag/ts-md5)
 
 Thank you.
 
-# Introduction
+## Introduction
 
 A MD5 implementation for TypeScript.
 
 Both `.cjs` and `.mjs` are exported.
 
-# Usage
+## Usage
 
-## Install
-`npm i @d-gs/md5`
+### Install
+```sh
+npm i @d-gs/md5
+```
 
 or
 
-`pnpm add @d-gs/md5`
+```sh
+pnpm add @d-gs/md5
+```
 
-## Basic Hashing
+### Basic Hashing
 
 1. Import the class
     * `import { Md5 } from '@d-gs/md5';`
