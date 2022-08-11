@@ -1,0 +1,43 @@
+{
+    "name": "@d-gs/md5",
+    "version": "1.0.0",
+    "description": "",
+    "type": "module",
+    "main": "./dist/index.cjs",
+    "module": "./dist/index.mjs",
+    "types": "./dist/index.d.ts",
+    "exports": {
+        ".": {
+            "require": "./dist/index.cjs",
+            "import": "./dist/index.mjs",
+            "types": "./dist/index.d.ts"
+        }
+    },
+    "files": [
+        "dist"
+    ],
+    "author": "__d",
+    "license": "MIT",
+    "keywords": [
+        "md5"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/glamseam/md5.git"
+    },
+    "bugs": {
+        "url": "https://github.com/glamseam/md5/issues"
+    },
+    "scripts": {
+        "build": "unbuild",
+        "pub": "pnpm build && pnpm publish --access=public",
+        "lint": "eslint src -c .eslintrc.json --ext ts",
+        "lint:fix": "eslint --fix src -c .eslintrc.json --ext ts"
+    },
+    "devDependencies": {
+        "@d-gs/eslint-config": "^0.1.12",
+        "eslint": "^8.21.0",
+        "typescript": "^4.7.4",
+        "unbuild": "^0.8.7"
+    }
+}
